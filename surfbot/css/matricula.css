@@ -1,0 +1,434 @@
+body, h1, h2, h3, ul, p, li, a, input, label, form  {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*Header*/
+.header-bg {
+  background-color: var(--cor-6);
+ }
+ 
+ .header {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+ 
+ .header-menu {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 60px;
+   position: relative;
+ }
+ 
+ .header-menu a{
+   display: inline-block;
+   color: var(--cor-0);
+   position: relative;
+ }
+ 
+ .circulo1::before {
+   content: "";
+   display: block;
+   width: 5px;
+   height: 5px;
+   border: solid 3px var(--cor-0);
+   border-radius: 50%;
+   background: var(--cor-p6);
+   position: absolute;
+   top: 10px;
+   right: 70px;
+ }
+ 
+ .circulo2::before {
+   content: "";
+   display: block;
+   width: 5px;
+   height: 5px;
+   border: solid 3px var(--cor-0);
+   border-radius: 50%;
+   background: var(--cor-p6);
+   position: absolute;
+   top: 10px;
+   right: 90px;
+ }
+ 
+ .circulo3::before {
+   content: "";
+   display: block;
+   width: 5px;
+   height: 5px;
+   border: solid 3px var(--cor-0);
+   border-radius: 50%;
+   background: var(--cor-p6);
+   position: absolute;
+   top: 10px;
+   right: 125px;
+ }
+ 
+ .header-menu .matricula {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 100px;
+   background-color: var(--cor-p4);
+   position: absolute;
+ }
+
+ /*Matricula*/
+
+ .matricule-se-bg {
+  background: var(--cor-1);
+ }
+
+ .matricule-se-bg h1 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+ }
+
+ @media (max-width: 800px) {
+  .matricule-se-bg h1 {
+    font: 400 2.5rem/1 "Alice", serif;
+ }
+}
+
+ /*Formulário-completo*/ 
+ .formulario-completo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 130px 50px;
+ }
+
+ .formulario-1 {
+  grid-column: 1;
+ }
+
+ .nome-completo, .email, .cpf, .logradouro, .estado, .cep, .cidade{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .nome-completo label, .email label, .cpf label, .logradouro label, .estado label, .cep label, .cidade label {
+  padding-bottom: 5px;
+}
+
+ .nome-completo input, .email input, .cpf input, .logradouro input, .estado input, .cep input, .cidade input {
+ background: var(--cor-1);
+ border: none;
+ border-radius: 5px;
+ padding-top: 15px;
+ padding-bottom: 15px;
+ padding-left: 15px;
+}
+
+.nome-completo input, .email input, .cpf input {
+  margin-bottom: 15px;
+}
+
+.logradouro-estado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cep-cidade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/*Formulário-2*/
+.formulario-2 {
+  grid-column: 1;
+  margin-top: -50px;
+}
+
+.formulario-2 h2 {
+  margin-bottom: 15px;
+}
+
+.retangulo5 {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 550px;
+  background-color: var(--cor-1);
+  margin-bottom: 15px;
+}
+
+.credito-boleto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.credito {
+  background: var(--cor-3);
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.boleto {
+  background: var(--cor-1);
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.nome-cartao, .data-expiracao, .data-expiracao2, .numero-cartao, .numero-seguranca {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-data, .cartao-seguranca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mes-ano {
+  display: flex;
+  gap: 30px;
+}
+
+.nome-cartao label, .data-expiracao label, .data-expiracao2 label, .numero-cartao label, .numero-seguranca label {
+  padding-bottom: 5px;
+}
+
+.nome-cartao input, .data-expiracao input, .data-expiracao2 input{
+  background: var(--cor-1);
+  border: none;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.numero-cartao input, .numero-seguranca input{
+  background: var(--cor-1);
+  border: none;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.botao-realizar {
+  cursor: pointer;
+  background: var(--cor-p2);
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+.informacoes {
+  display: flex;
+  gap: 10px;
+}
+
+.informacoes img {
+  margin-bottom: 60px;
+}
+
+.informacoes h2 {
+  margin-bottom: 60px;
+}
+
+/*Plano*/
+.escolha-plano {
+  grid-column: 2;
+  background: var(--cor-1);
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  margin-top: -600px;
+  margin-bottom: 500px;
+  margin-right: 45px;
+}
+
+.escolha-plano h2 {
+  margin-bottom: 15px;
+}
+
+.lista-planos {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.lista-planos .infantil {
+  background: var(--cor-3);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.lista-planos .adulto {
+  background: var(--cor-0);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+.lista-planos .profissional {
+  background: var(--cor-0);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  margin-top: -10px;
+}
+
+.retangulo6 {
+  content: "";
+  height: 2px;
+  width: 2px;
+  background: var(--cor-2);
+}
+
+.lista-planos .profissional {
+  background: var(--cor-0);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+@media (max-width: 1100px) {
+  .formulario-completo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+   }
+   .escolha-plano {
+    grid-column:1;
+    background: var(--cor-1);
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    margin-top: -100px;
+    margin-left: -10px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+  }
+  .formulario-completo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 130px 50px;
+    margin-right: -200px;
+   }
+  }
+
+  @media (max-width: 600px) {
+    .formulario-completo {
+      display: block;
+      margin-right: 50px;
+    }
+    .formulario-2 {
+      margin-top: 0px;
+    }
+    .mes-ano {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .escolha-plano {
+      margin-top: 0px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .formulario-completo {
+      margin-right: 0px;
+     }
+    .credito {
+      padding-left: 40px;
+    }
+    .boleto {
+      padding-left: 40px;
+    }
+    .botao-matricula {
+      padding-right: 60px;
+    }
+    .botao-matricula img {
+      bottom: 15px;
+      left: 160px;
+    }
+    .lista-planos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .lista-planos .infantil, .lista-planos .adulto, .lista-planos .profissional {
+      display: block;
+      border-radius: 5px;
+    }
+    .retangulo6 {
+      background: none;
+    }
+    .plano-tipo {
+        background: var(--cor-0);
+        border-radius: 5px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+  }
+
+
+  @media (max-width: 400px) {
+    .botao-matricula {
+      padding-right: 40px;
+    }
+    .botao-matricula img {
+      bottom: 12px;
+      left: 120px;
+    }
+  }
+
+  .footer-matricula {
+    background: var(--cor-p2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surfbot</title>
+  <meta name="description" content="Surfbot é um site para quem quer aprender ou aprimorar as técnicas do surf.">
+
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="matricula">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./"><img src="/surfbot/img/surfbot 1.svg" alt="Surfbot"></a>
+      <nav aria-label="primaria">
+        <ul class="header-menu fonte-3 cor-0">
+          <li><a href="#praia">Praia</a></li>
+          <li><a href="#aulas"><span class="circulo1"></span>Aulas</a></li>
+          <li><a href="#contato"><span class="circulo2"></span>Contato</a></li>
+          <li><a href="./matricula.html"><span class="circulo3"></span>Matricule-se</a><span class="matricula"></span></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="matricule-se-bg">
+    <div class="container">
+      <h1 class="fonte-6 cor-5">Matricule-se</h1>
+    </div>
+  </main>
+
+  <section class="container">
+    <div class="formulario-completo">
+      <div class="formulario-1">
+        <form action="./matricule.html">
+          <div class="nome-completo">
+            <label class="fonte-4 cor-5" for="nome">Nome Completo</label>
+            <input class="fonte-1 cor-5" type="text" id="nome" name="nome">
+          </div>
+
+          <div class="email">
+            <label class="fonte-4 cor-5" for="email">Email</label>
+            <input class="fonte-1 cor-5" type="email" id="email" name="email">
+          </div>
+
+          <div class="cpf">
+            <label class="fonte-4 cor-5" for="cpf">CPF:</label>
+            <input class="fonte-1 cor-5" type="text" id="cpf" name="cpf" placeholder="111.111.111-11" />
+          </div>
+
+          <div class="logradouro-estado">
+            <div class="logradouro">
+              <label class="fonte-4 cor-5" for="logradouro">Logradouro:</label>
+              <input class="fonte-1 cor-5" type="text" id="logradouro" name="logradouro" placeholder="Rua nome, número, bairro." /><br>
+            </div>
+
+            <div class="estado">
+              <label class="fonte-4 cor-5" for="estado">Estado:</label>
+              <input class="fonte-1 cor-5" type="text" id="estado" name="estado" placeholder="Selecione seu Estado">
+            </div>
+          </div>
+
+          <div class="cep-cidade">
+            <div class="cep">
+              <label class="fonte-4 cor-5" for="cep">CEP:</label>
+              <input class="fonte-1 cor-5" type="text" id="cep" name="cep" placeholder="22.222-222" /><br>
+            </div>
+
+            <div class="cidade">
+              <label class=" fonte-4 cor-5" for="cidade">Cidade:</label>
+              <input class="fonte-1 cor-5" type="text" id="cidade" name="cidade" placeholder="Selecione sua Cidade" /><br>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="formulario-2">
+        <h2 class="fonte-4 cor-p2">Formas de pagamento</h2>
+        <span class="retangulo5"></span>
+        <div class="credito-boleto">
+          <h3 class="credito fonte-3 cor-5">Cartão de crédito</h2>
+            <h3 class="boleto fonte-3 cor-5">Boleto bancário</h2>
+        </div>
+
+        <form action=""></form>
+        <div class="nome-data">
+          <div class="nome-cartao">
+            <label class="fonte-4 cor-5" for="nome">Nome Completo</label>
+            <input class=" fonte-1 cor-5" type="text" id="nome" name="nome" placeholder="Nome impresso no cartão">
+          </div>
+
+          <div class="data-expiracao">
+            <label class="fonte-4 cor-5" for="data-expiracao">Data de expiração</label>
+            <div class="mes-ano">
+              <input class="mes fonte-2 cor-5" type="text" id="data-expiracao" name="data-expiracao" placeholder="Mês">
+              <input class="ano fonte-2 cor-5" type="text" id="data-expiracao" name="data-expiracao" placeholder="Ano">
+            </div>
+          </div>
+        </div>
+
+        <div class="cartao-seguranca">
+          <div class="numero-cartao">
+            <label class="fonte-4 cor-5" for="numero-cartao">Número do cartão</label>
+            <input class="fonte-2 cor-5" type="number" id="numero-cartao" name="numero-cartao" placeholder="3333 3333 3333 333">
+          </div>
+
+          <div class="numero-seguranca">
+            <label class="fonte-4 cor-5" for="numero-seguranca">Número de segurança</label>
+            <input class="fonte-2 cor-5" type="number" id="numero-seguranca" name="numero-seguranca" placeholder="XXX">
+          </div>
+        </div>
+        <h2 class="fonte-3 cor-5">Seu cartão será debitado em R$ 49,00.</h2>
+        <button class="botao-realizar fonte-4 cor-0">REALIZAR MATRÍCULA</button>
+        <div class="informacoes">
+          <img src="/surfbot/img/cadeado 1.svg" alt="">
+          <h2 class="fonte-1 cor-5">Informações seguras e criptografadas</h2>
+        </div>
+      </div>
+
+
+      <div class="escolha-plano container">
+        <h2 class="fonte-4 cor-5 ">Escolha o plano</h2>
+        <ul class="lista-planos">
+          <li><a class="infantil fonte-4 cor-5 " href="/">Infantil</a></li>
+          <li><a class="adulto fonte-4 cor-5 " href="/">Adulto</a></li>
+          <span class="retangulo6"></span>
+          <li><a class="profissional fonte-4 cor-5 " href="/">Profissional</a></li>
+        </ul>
+
+        <div class="plano-tipo">
+          <h2 class="fonte-7 cor-5 ">INFANTIL</h2>
+          <span class="retangulo2"></span>
+          <p class="fonte-1 cor-6">Público entre 5 a 15 anos</p>
+          <p class="fonte-1 cor-6">Equipamentos fornecidos</p>
+          <p class="fonte-1 cor-6">Horários de Sex. à Sab.</p>
+          <p class="fonte-1 cor-6">2 horas seguidas de aula</p>
+          <span class="retangulo2"></span>
+          <span class="fonte-2 cor-p3">R$ 49.00 / Aula</span>
+          <form action="matricula.html">
+            <button class="botao-matricula fonte-4 cor-0">MATRICULE-SE <img src="/surfbot/img/seta.svg" alt=""></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer-matricula">
+    <div class="container">
+      <p class="fonte-3 cor-0">Surfbord 2023 todos os direitos reservados</p>
+    </div>
+  </footer>
+  </header>
